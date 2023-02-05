@@ -19,4 +19,23 @@ public class AprenderCucumberStepdefs {
     public void aEspecificacaoDeveFinalizarComSucesso() {
     }
 
+    private int contador = 0;
+
+    @Dado("que o valor do contador é {int}")
+    public void queOValorDoContadorE(Integer int1) {
+        contador = int1;
+    }
+
+    @Quando("eu incrementar em {int}")
+    public void euIncrementarEm(Integer int1) {
+        contador += int1;
+    }
+
+    @Entao("o valor do contador será {int}")
+    public void oValorDoContadorSera(Integer int1) {
+        System.out.println(contador);
+        System.out.println(int1);
+    }
+
+
 }
