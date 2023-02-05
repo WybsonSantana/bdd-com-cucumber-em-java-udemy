@@ -3,6 +3,7 @@ package br.dev.s2w.cucumber;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
+import org.junit.Assert;
 
 public class AprenderCucumberStepdefs {
 
@@ -33,8 +34,7 @@ public class AprenderCucumberStepdefs {
 
     @Entao("o valor do contador será {int}")
     public void oValorDoContadorSera(Integer int1) {
-        System.out.println(contador);
-        System.out.println(int1);
+        Assert.assertEquals(Integer.parseInt(String.valueOf(int1)), contador);
     }
 
 
