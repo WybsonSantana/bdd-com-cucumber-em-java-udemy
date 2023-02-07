@@ -76,4 +76,28 @@ public class AprenderCucumberStepdefs {
         );
     }
 
+    @Dado("^que o ticket( especial)? é (A.\\d{3})$")
+    public void queOTicketEAF(String tipo, String arg1) {
+    }
+
+    @Dado("^que o valor da passagem é R\\$ (.*)$")
+    public void queOValorDaPassagemER$(Double numero) {
+    }
+
+    @Dado("^que o nome do passageiro é \"(.{5,20})\"$")
+    public void queONomeDoPassageiroE(String arg1) {
+    }
+
+    @Dado("^que o telefone do passageiro é (9\\d{3}-\\d{4})$")
+    public void queOTelefoneDoPassageiroE(String telefone) {
+    }
+
+    @Dado("^criar os steps$")
+    public void criarOsSteps() {
+    }
+
+    @Dado("^o teste vai funcionar$")
+    public void oTesteVaiFuncionar() {
+    }
+
 }

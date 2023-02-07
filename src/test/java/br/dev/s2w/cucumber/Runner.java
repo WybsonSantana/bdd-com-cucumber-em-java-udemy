@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
         monochrome = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         dryRun = false,
-        strict = false
+        strict = false,
+        tags = {"@Unitários", "not @NegarStepsAnteriores"}
 )
 public class Runner {
 }
