@@ -1,4 +1,4 @@
-package br.dev.s2w.cucumber;
+package br.dev.s2w.cucumber.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/br/dev/s2w/cucumber/aprender_cucumber.feature",
+        features = "src/test/resources/features/aprender_cucumber.feature",
+        glue = "br/dev/s2w/cucumber/stepdefs",
         plugin = "pretty",
         monochrome = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
@@ -14,5 +15,5 @@ import org.junit.runner.RunWith;
         strict = false,
         tags = {"@Unitários", "not @NegarStepsAnteriores"}
 )
-public class Runner {
+public class TestRunner {
 }

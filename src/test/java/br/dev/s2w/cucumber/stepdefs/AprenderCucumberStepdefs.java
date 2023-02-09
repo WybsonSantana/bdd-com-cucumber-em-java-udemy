@@ -1,4 +1,4 @@
-package br.dev.s2w.cucumber;
+package br.dev.s2w.cucumber.stepdefs;
 
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
